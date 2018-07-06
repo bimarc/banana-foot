@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainCalcetto></MainCalcetto>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainCalcetto from './components/MainCalcetto.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MainCalcetto
   }
 }
 </script>
 
 <style>
+
+  @import './Calcetto-Cad/style.css';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+html {
+  overflow: auto !important;
+  height: 100%;
+  width: 100%;
+}
+
+body, #app {
+  height: 100%;
+  width: 100%;
+}
+
+  .bottomNavCustom button.ballMenu div {
+      margin-top: -22px !important;
+  }
+
 </style>
